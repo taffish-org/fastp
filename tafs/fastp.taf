@@ -1,0 +1,9 @@
++TOOL:fastp
+ARGS
+    <else>
+        fastp --help
+    <main>
+        fastp ::*APP-ARGS*::
+RUN
+    <container:taf-fastp-v0.24.0:ghcr.io/taffish-org/fastp:0.24.0>
+        ::*MAIN*::
